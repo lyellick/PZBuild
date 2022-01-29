@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PZBuild.Common", "PZBuild.Common\PZBuild.Common.csproj", "{87D76BF2-DD95-463F-A7B8-0C4004D3081C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PZBuild.Web.Site", "PZBuild.Web.Site\PZBuild.Web.Site.csproj", "{856D5596-A8D9-4BEF-8C41-B79588DE9362}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87D76BF2-DD95-463F-A7B8-0C4004D3081C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D76BF2-DD95-463F-A7B8-0C4004D3081C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D76BF2-DD95-463F-A7B8-0C4004D3081C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D76BF2-DD95-463F-A7B8-0C4004D3081C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856D5596-A8D9-4BEF-8C41-B79588DE9362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856D5596-A8D9-4BEF-8C41-B79588DE9362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856D5596-A8D9-4BEF-8C41-B79588DE9362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856D5596-A8D9-4BEF-8C41-B79588DE9362}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
