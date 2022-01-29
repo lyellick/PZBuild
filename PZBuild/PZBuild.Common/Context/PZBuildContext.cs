@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using PZBuild.Common.Models;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,9 @@ namespace PZBuild.Common.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            foreach (IMutableEntityType? entityType in modelBuilder.Model.GetEntityTypes())
+                modelBuilder.Entity(entityType.ClrType).ToTable(entityType.ClrType.Name);
+
             modelBuilder.Entity<Occupation>()
                 .HasOne(p => p.ExclusiveTrait)
                 .WithMany(b => b.Occupations);
