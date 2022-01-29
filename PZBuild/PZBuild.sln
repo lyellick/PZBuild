@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PZBuild.Common", "PZBuild.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PZBuild.Web.Site", "PZBuild.Web.Site\PZBuild.Web.Site.csproj", "{856D5596-A8D9-4BEF-8C41-B79588DE9362}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PZBuild.Common.Test", "PZBuild.Common.Test\PZBuild.Common.Test.csproj", "{494ABE46-F991-4F6A-BB2F-BF164BD3E994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PZBuild.Common.Test", "PZBuild.Common.Test\PZBuild.Common.Test.csproj", "{494ABE46-F991-4F6A-BB2F-BF164BD3E994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
