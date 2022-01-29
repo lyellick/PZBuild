@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* Meta *@
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    @* Title *@
+    <title>PZ Build - @ViewBag.Title</title>
+
+    @* Favicon *@
+    <link rel="icon" type="image/svg+xml" href="~/assets/dead-dynamic.svg" sizes="16x16 32x32 64x64" />
+
+    @* StyleSheets *@
+
+    @* Global site tag (gtag.js) - Google Analytics *@
+</head>
+<body>
+    @* Main Content *@
+    @RenderBody()
+
+    @* Javascript *@
+
+    @* Targeted Javascript *@
+    @RenderSection(name: "PageScript", required: false)
+</body>
+</html>
