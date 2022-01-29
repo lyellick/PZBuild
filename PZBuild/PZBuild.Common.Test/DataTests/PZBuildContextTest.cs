@@ -1,10 +1,10 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using PZBuild.Common.Context;
+using PZBuild.Common.Data;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace PZBuild.Common.Test.ContextTests
+namespace PZBuild.Common.Test.DataTests
 {
     public class PZBuildContextTest
     {

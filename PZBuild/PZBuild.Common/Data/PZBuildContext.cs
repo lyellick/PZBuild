@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PZBuild.Common.Context
+namespace PZBuild.Common.Data
 {
     public class PZBuildContext : DbContext
     {
