@@ -19,7 +19,21 @@
 </head>
 <body>
     @* Main Content *@
-    @RenderBody()
+    <main class="w-100 h-100 overflow-auto">
+        <div class="d-flex flex-column h-100">
+            @* Navigation *@
+            <div class="d-flex p-2">
+                <div class="d-flex flex-grow-1 align-items-center">
+                    <a href="/" class="d-flex justify-content-center align-items-center me-2 text-decoration-none text-black">
+                        <img src="~/assets/dead-dark.svg" alt="" width="24" height="24" class="d-inline-block align-text-top me-2">
+                        <div>PZ Build</div>
+                    </a>
+                </div>
+                @RenderSection(name: "NavigationSection", required: false)
+            </div>
+            @RenderBody()
+        </div>
+    </main>
 
     @* Javascript *@
     <script type="text/javascript" src="~/thirdparty/bootstrap/v5.1.3/js/bootstrap.bundle.min.js"></script>
