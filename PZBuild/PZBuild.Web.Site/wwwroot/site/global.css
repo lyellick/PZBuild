@@ -4,6 +4,9 @@ body {
   height: 100%;
   overflow: hidden;
 }
+.tiny {
+  font-size: 0.8rem;
+}
 #character-select {
   width: 23.2rem !important;
 }
