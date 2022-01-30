@@ -7,6 +7,9 @@ body {
 .tiny {
   font-size: 0.8rem;
 }
+.form-select {
+  border: 1px solid rgba(206, 212, 218, 0) !important;
+}
 #character-select {
   width: 23.2rem !important;
 }
