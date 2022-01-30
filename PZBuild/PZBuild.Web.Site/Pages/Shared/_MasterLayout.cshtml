@@ -22,16 +22,20 @@
     <main class="w-100 h-100 overflow-auto">
         <div class="d-flex flex-column h-100">
             @* Navigation *@
-            <div class="d-flex p-2">
+            <div class="d-flex p-2 shadow-sm bg-dark">
                 <div class="d-flex align-items-center flex-grow-1 align-items-center">
-                    <a href="/" class="d-flex justify-content-center align-items-center me-2 text-decoration-none text-black">
-                        <img src="~/assets/dead-dark.svg" alt="" width="36" height="36" class="d-inline-block align-text-top me-2">
+                    <a href="/" class="d-flex justify-content-center align-items-center me-2 text-decoration-none text-light">
+                        <img src="~/assets/dead-light.svg" alt="" width="36" height="36" class="d-inline-block align-text-top me-2">
                         <div class="fs-3">PZ Build</div>
                     </a>
+                    <div class="d-flex flex-grow-1 align-items-center text-light small">Project Zomboid Character Builder</div>
                 </div>
                 @RenderSection(name: "NavigationSection", required: false)
             </div>
             @RenderBody()
+            <div class="p-3 bg-dark">
+                <div class="d-flex justify-content-center tiny text-muted">Inspired by&nbsp;<a href="http://undeniable.info/pz/CharacterPlanner.php" target="_blank">Project Zomboid Character Planner</a>&nbsp; | All Assets and Content from&nbsp;<a href="https://projectzomboid.com/" target="_blank">Project Zomboid</a>&nbsp;&amp;&nbsp;<a href="https://pzwiki.net/" target="_blank">PZwiki</a>&nbsp;|&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border rounded-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></div>
+            </div>
         </div>
     </main>
 
