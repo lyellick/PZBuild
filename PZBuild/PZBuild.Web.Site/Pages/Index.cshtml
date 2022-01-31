@@ -1,10 +1,39 @@
 ﻿@page
+@model IndexModel
 @{
-    ViewBag.Title = "Character Builder";
+    ViewBag.Title = $"Character Builder";
+
+    List<Occupation> occupations = Model.Occupations;
+    List<Skill> skills = Model.Skills;
+    List<Trait> traits = Model.Traits;
 }
 
 @section NavigationSection {
-
+<div class="d-flex align-items-center text-light tiny">
+    <div class="d-flex flex-row justify-content-end align-items-center me-5">
+        <select id="character-select" class="form-select form-select-sm me-2 w-100">
+            <option disabled selected>Saved Characters</option>
+        </select>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class="btn btn-sm btn-success d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
+            </div>
+            <div class="btn btn-sm btn-danger d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-dash" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="me-3">Available Points</div>
+        <div class="fs-4" id="available-points">0</div>
+    </div>
+</div>
 }
 
 @* Title *@
@@ -13,19 +42,75 @@
         @* Occupations *@
         <div class="d-flex flex-grow-1 flex-column h-100 overflow-hidden me-3 rounded shadow-sm">
             <div class="d-flex p-2 bg-dark-green">Occupations</div>
-            <div class="h-100 overflow-auto bg-dark spiffo-lost"></div>
+            <div id="occupations" class="h-100 overflow-auto bg-dark spiffo-lost text-light">
+                @foreach (Occupation occupation in occupations)
+                {
+                    <div class="d-flex flex-row align-items-center w-100 p-3 pointer selection" data-bs-toggle="tooltip" data-bs-placement="bottom" title="@occupation.Description">
+                        <div class="me-3">
+                            <img src="@occupation.Icon" alt="@occupation.Name" width="64" height="64" />
+                        </div>
+                        <div class="flex-grow-1">@occupation.Name</div>
+                    </div>
+                }
+            </div>
         </div>
         @* Available Traits *@
         <div class="d-flex flex-grow-1 flex-column h-100 overflow-hidden me-3">
             @* Positive Traits *@
             <div class="d-flex flex-grow-1 flex-column h-100 overflow-hidden rounded mb-3 shadow-sm">
                 <div class="d-flex flex-shrink-0 p-2 bg-dark-green">Positive Traits</div>
-                <div class="h-100 overflow-auto bg-dark spiffo-crafting"></div>
+                <div id="positive-traits" class="h-100 overflow-auto bg-dark spiffo-crafting text-light">
+                    @foreach (Trait trait in traits.Where(trait => !trait.IsPositive && !trait.IsOccupationExclusive))
+                    {
+                        <div class="d-flex flex-row align-items-center justify-content-between p-3 pointer selection">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="me-3">
+                                    <img src="@trait.Icon" alt="@trait.Name" width="20" height="20" />
+                                </div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <div class="d-flex align-items-center me-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="@trait.Effect">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                                                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                            </svg>
+                                        </div>
+                                        <div>@trait.Name</div>
+                                    </div>
+                                    <div class="tiny text-muted">@trait.Description</div>
+                                </div>
+                            </div>
+                            <div class="badge bg-danger">@trait.Point</div>
+                        </div>
+                    }
+                </div>
             </div>
             @* Negative Traits *@
             <div class="d-flex flex-grow-1 flex-column h-100 overflow-hidden rounded shadow-sm">
                 <div class="d-flex flex-shrink-0 p-2 bg-dark-green">Negative Traits</div>
-                <div class="h-100 overflow-auto bg-dark spiffo-nervous"></div>
+                <div id="negative-traits" class="h-100 overflow-auto bg-dark spiffo-nervous text-light">
+                    @foreach (Trait trait in traits.Where(trait => trait.IsPositive && !trait.IsOccupationExclusive))
+                    {
+                        <div class="d-flex flex-row align-items-center justify-content-between p-3 pointer selection">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="me-3">
+                                    <img src="@trait.Icon" alt="@trait.Name" width="20" height="20" />
+                                </div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <div class="d-flex align-items-center me-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="@trait.Effect">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                                                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                                            </svg>
+                                        </div>
+                                        <div>@trait.Name</div>
+                                    </div>
+                                    <div class="tiny text-muted">@trait.Description</div>
+                                </div>
+                            </div>
+                            <div class="badge bg-danger">@trait.Point</div>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
         <div class="d-flex flex-grow-1 flex-column h-100 overflow-hidden">
@@ -41,34 +126,14 @@
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-between align-items-center pt-3 px-3 text-light tiny">
-        <div class="d-flex flex-row justify-content-end align-items-center">
-            <select id="character-select" class="form-select form-select-sm me-2 w-100">
-                <option disabled selected>Saved Characters</option>
-            </select>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <div class="btn btn-sm btn-success d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
-                    </svg>
-                </div>
-                <div class="btn btn-sm btn-danger d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-dash" viewBox="0 0 16 16">
-                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                        <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="me-3">Available Points</div>
-            <div class="fs-4" id="available-points">0</div>
-        </div>
-    </div>
 </div>
 
 @* Javascript *@
 @section PageScript {
-
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
 }

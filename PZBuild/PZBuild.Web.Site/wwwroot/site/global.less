@@ -1,7 +1,28 @@
-﻿html, body {
+﻿@transition: 300ms;
+
+html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+.selection {
+    background-color: initial;
+}
+
+.selection:hover {
+    background-color: #0f5132;
+    -webkit-transition: background-color @transition linear;
+    -ms-transition: background-color @transition linear;
+    transition: background-color @transition linear;
+}
+
+.selected {
+    background-color: #19340a;
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
 
 .tiny {
@@ -24,56 +45,56 @@
 .spiffo-eating {
     background-image: url(https://pzwiki.net/w/images/c/c3/Spiffouse.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-crafting {
     background-image: url(https://pzwiki.net/w/images/b/b3/Be_crafty.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-running {
     background-image: url(https://pzwiki.net/w/images/f/f9/Spiffoskip.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-lost {
     background-image: url(https://pzwiki.net/w/images/b/bc/404SpiffoMascotMap.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-dunce {
     background-image: url(https://pzwiki.net/w/images/c/c2/SpiffoDon%27t.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-thinking {
     background-image: url(https://pzwiki.net/w/images/a/a0/Spiffo_thinking.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-nervous {
     background-image: url(https://pzwiki.net/w/images/d/db/Spiffo_controlyourself.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
 .spiffo-rummage {
     background-image: url(https://pzwiki.net/w/images/3/37/Spiffo_rummage.png);
     background-repeat: no-repeat;
-    background-position: bottom 1rem right 1rem;
+    background-position: bottom 1rem right 2rem;
     background-size: 5rem;
 }
 
