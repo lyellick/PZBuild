@@ -2,111 +2,111 @@
   {
     "Name": "Unemployed",
     "Icon": "https://pzwiki.netundefined",
-    "Description": "In-game description: 8 free trait points.\\n"
+    "Description": "In-game description: 8 free trait points."
   },
   {
     "Name": "Fire Officer",
     "Icon": "https://pzwiki.net/w/images/e/eb/Fire_Officer.png",
-    "Description": "Fire Officers can carry more and run faster for longer periods of time.\\n"
+    "Description": "Fire Officers can carry more and run faster for longer periods of time."
   },
   {
     "Name": "Police Officer",
     "Icon": "https://pzwiki.net/w/images/6/66/Police_Officer.png",
-    "Description": "Police Officers are very effective with firearms, as such this profession is great if you want to face the hordes of the undead Guns Blazin'.\\n"
+    "Description": "Police Officers are very effective with firearms, as such this profession is great if you want to face the hordes of the undead Guns Blazin'."
   },
   {
     "Name": "Park Ranger",
     "Icon": "https://pzwiki.net/w/images/7/77/Park_Ranger.png",
-    "Description": "Park Rangers, thanks to their skill boost are great for players who are looking to survive away from any town, deep in the wilderness. Park Rangers can move at 75% speed while walking through forests. They also have a bonus to search mode, allowing them to find items easily while in search mode. In-game description: Allows much faster movement through forests and woodland.\\n"
+    "Description": "Park Rangers, thanks to their skill boost are great for players who are looking to survive away from any town, deep in the wilderness. Park Rangers can move at 75% speed while walking through forests. They also have a bonus to search mode, allowing them to find items easily while in search mode. In-game description: Allows much faster movement through forests and woodland."
   },
   {
     "Name": "Construction Worker",
     "Icon": "https://pzwiki.net/w/images/0/02/Construction_Worker.png",
-    "Description": "While Construction Worker is no longer the best choice for those who want to build their own base, this profession definitely is the one to go with if you like fighting zombies with Blunt weapons.\\n"
+    "Description": "While Construction Worker is no longer the best choice for those who want to build their own base, this profession definitely is the one to go with if you like fighting zombies with Blunt weapons."
   },
   {
     "Name": "Security Guard",
     "Icon": "https://pzwiki.net/w/images/1/1b/Security_Guard.png",
-    "Description": "Security Guard is a good choice for those who enjoy moving from place to place without clearing the entire area. Characters with this profession need less sleep (recover from tiredness quicker) and stay more alert when they do. They can also evacuate much faster should things go south.\\n"
+    "Description": "Security Guard is a good choice for those who enjoy moving from place to place without clearing the entire area. Characters with this profession need less sleep (recover from tiredness quicker) and stay more alert when they do. They can also evacuate much faster should things go south."
   },
   {
     "Name": "Carpenter",
     "Icon": "https://pzwiki.net/w/images/0/0a/Carpenter.png",
-    "Description": "This occupation is great for those who are looking to build their own base. And nothing else.\\n"
+    "Description": "This occupation is great for those who are looking to build their own base. And nothing else."
   },
   {
     "Name": "Burglar",
     "Icon": "https://pzwiki.net/w/images/2/29/Burglar.png",
-    "Description": "Burglars are the best choice for those who prefer to sneak past zombies rather than fight them. They can, however, move quickly while in combat, making them very versatile. Burglars can also Hotwire vehicles without the necessary character skills.[1] In-game description: Can hotwire vehicles, less chance of breaking the lock of a window.\\n"
+    "Description": "Burglars are the best choice for those who prefer to sneak past zombies rather than fight them. They can, however, move quickly while in combat, making them very versatile. Burglars can also Hotwire vehicles without the necessary character skills.[1] In-game description: Can hotwire vehicles, less chance of breaking the lock of a window."
   },
   {
     "Name": "Chef",
     "Icon": "https://pzwiki.net/w/images/e/e5/Chef.png",
-    "Description": "Chefs are very good at handling various kitchenware and stabbing\\\\cutting things with their kitchen knives. Choosing this profession ensures that you'll eat well even after the apocalypse and use the most out of ingredients.\\n"
+    "Description": "Chefs are very good at handling various kitchenware and stabbing\\\\cutting things with their kitchen knives. Choosing this profession ensures that you'll eat well even after the apocalypse and use the most out of ingredients."
   },
   {
     "Name": "Repairman",
     "Icon": "https://pzwiki.net/w/images/9/9e/Repairman.png",
-    "Description": "Repairman is a profession for those who want to use their tools for a little longer without them breaking and even then be able to repair them easily, if they have the right kind of glue or some duct tape.\\n"
+    "Description": "Repairman is a profession for those who want to use their tools for a little longer without them breaking and even then be able to repair them easily, if they have the right kind of glue or some duct tape."
   },
   {
     "Name": "Farmer",
     "Icon": "https://pzwiki.net/w/images/3/3d/Farmer.png",
-    "Description": "Profession of choice for those who don't want to starve once the last can of tuna and pack of crisps are nothing but a memory.\\n"
+    "Description": "Profession of choice for those who don't want to starve once the last can of tuna and pack of crisps are nothing but a memory."
   },
   {
     "Name": "Fisherman",
     "Icon": "https://pzwiki.net/w/images/f/f0/Fisherman.png",
-    "Description": "Good starting profession for those who choose to survive in the wilderness with a massive bonus to fishing and a slight bonus to foraging. They also have a bonus to search mode, allowing them to find items easily while in search mode.\\n"
+    "Description": "Good starting profession for those who choose to survive in the wilderness with a massive bonus to fishing and a slight bonus to foraging. They also have a bonus to search mode, allowing them to find items easily while in search mode."
   },
   {
     "Name": "Doctor",
     "Icon": "https://pzwiki.net/w/images/6/6c/Doctor.png",
-    "Description": "Doctors are much better at treating injuries than other people but are not too useful in a world where a single scratch from a zombie can mean death.\\n"
+    "Description": "Doctors are much better at treating injuries than other people but are not too useful in a world where a single scratch from a zombie can mean death."
   },
   {
     "Name": "Veteran",
     "Icon": "https://pzwiki.net/w/images/c/c5/Veteran.png",
-    "Description": "Veterans never panic, no matter how bad it is they can stand their ground and deal out headshots to any zombies that made the mistake of trying to scare them.\\n"
+    "Description": "Veterans never panic, no matter how bad it is they can stand their ground and deal out headshots to any zombies that made the mistake of trying to scare them."
   },
   {
     "Name": "Nurse",
     "Icon": "https://pzwiki.net/w/images/c/cc/Nurse.png",
-    "Description": "Nurses treat wounds better than others except for Doctors. They also have a slight bonus to Lightfooted, allowing them to move a bit quieter, but that's about it.\\n"
+    "Description": "Nurses treat wounds better than others except for Doctors. They also have a slight bonus to Lightfooted, allowing them to move a bit quieter, but that's about it."
   },
   {
     "Name": "Lumberjack",
     "Icon": "https://pzwiki.net/w/images/c/cc/Lumberjack.png",
-    "Description": "Lumberjacks are very effective with an axe. No matter if they're hacking away at a tree or a zombie. Lumberjacks swings their axe 25% faster chopping trees and move at ~59% speed while walking through forests. They also have a bonus to search mode, allowing them to find items easily while in search mode. In-game description: Allows slightly faster movement through forests and woodland.\\n"
+    "Description": "Lumberjacks are very effective with an axe. No matter if they're hacking away at a tree or a zombie. Lumberjacks swings their axe 25% faster chopping trees and move at ~59% speed while walking through forests. They also have a bonus to search mode, allowing them to find items easily while in search mode. In-game description: Allows slightly faster movement through forests and woodland."
   },
   {
     "Name": "Fitness Instructor",
     "Icon": "https://pzwiki.net/w/images/0/07/FitnessInstructor.png",
-    "Description": "Fitness Instructors are very effective at running and have a high starting regularity for all exercises which means zombies and exercise fatigue usually aren't going to be a big problem for them.\\n"
+    "Description": "Fitness Instructors are very effective at running and have a high starting regularity for all exercises which means zombies and exercise fatigue usually aren't going to be a big problem for them."
   },
   {
     "Name": "Burger Flipper",
     "Icon": "https://pzwiki.net/w/images/f/f9/BurgerFlipper.png",
-    "Description": "Good for those who want to eat well and play with sharp objects.\\n"
+    "Description": "Good for those who want to eat well and play with sharp objects."
   },
   {
     "Name": "Electrician",
     "Icon": "https://pzwiki.net/w/images/d/dd/Electrician.png",
-    "Description": "This profession will allow the player to use generators and maintain them by default.In-game description: Can operate generators.\\n"
+    "Description": "This profession will allow the player to use generators and maintain them by default.In-game description: Can operate generators."
   },
   {
     "Name": "Engineer",
     "Icon": "https://pzwiki.net/w/images/d/d8/Engineer.png",
-    "Description": "The Engineer is able to craft different kinds of traps and powerful explosives, even some that cannot be learnt through recipe magazines.In-game description: Can make traps and explosives.\\n"
+    "Description": "The Engineer is able to craft different kinds of traps and powerful explosives, even some that cannot be learnt through recipe magazines.In-game description: Can make traps and explosives."
   },
   {
     "Name": "Metalworker",
     "Icon": "https://pzwiki.net/w/images/a/a3/Metalworker.png",
-    "Description": "The Metalworker is able to craft metal structures and furniture. In-game description: Can weld foraged metal to create items and barricades.\\n"
+    "Description": "The Metalworker is able to craft metal structures and furniture. In-game description: Can weld foraged metal to create items and barricades."
   },
   {
     "Name": "Mechanic",
     "Icon": "https://pzwiki.net/w/images/5/55/Mechanic.png",
-    "Description": "Mechanics know how to fix all sorts of cars, if they have the right tools. They are also good with short blunt weapons. In-game description: Familiar with the maintenance and repair of all vehicle models on the roads of Kentucky.\\n"
+    "Description": "Mechanics know how to fix all sorts of cars, if they have the right tools. They are also good with short blunt weapons. In-game description: Familiar with the maintenance and repair of all vehicle models on the roads of Kentucky."
   }
 ]
