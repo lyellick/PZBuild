@@ -8,14 +8,20 @@ namespace PZBuild.Common.Test.DataTests
 {
     public class PZBuildContextTest
     {
-        [Fact]
-        public async Task PZBuildContext_UsingSqliteInMemoryProvider_EnsureCreatedAsync()
+        private readonly PZBuildContext _context;
+
+        public PZBuildContextTest()
         {
             using SqliteConnection connection = new SqliteConnection("DataSource=:memory:");
             connection.Open();
             DbContextOptions<PZBuildContext>? options = new DbContextOptionsBuilder<PZBuildContext>().UseSqlite(connection).Options;
-            using PZBuildContext context = new PZBuildContext(options);
-            Assert.True(await context.Database.EnsureCreatedAsync());
+            _context = new PZBuildContext(options);
+        }
+
+        [Fact]
+        public async Task PZBuildContext_UsingSqliteInMemoryProvider_EnsureCreatedAsync()
+        {
+            Assert.True(await _context.Database.EnsureCreatedAsync());
         }
     }
 }
