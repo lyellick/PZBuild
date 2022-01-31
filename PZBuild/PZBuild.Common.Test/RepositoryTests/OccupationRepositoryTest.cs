@@ -40,10 +40,12 @@ namespace PZBuild.Common.Test.RepositoryTests
             /*  JavaScript - Target: https://pzwiki.net/wiki/Occupation
                 
                 var collection = [];
-                $("#mw-content-text > div > div > div:nth-child(2) > table > tbody > tr > td > span > a > img").each(function () {
+                $("#mw-content-text > div > div > div > table > tbody > tr").each(function (index, e) {
+                    var cols = $(e).find("td");
                     collection.push({
-                        Name: $(this).attr("alt"),
-                        Icon: "https://" + location.hostname + $(this).attr("src")
+                        Name: $(cols[0]).text().trim(),
+                        Icon: "https://" + location.hostname + $(cols[0]).find("img").attr("src"),
+                        Description: $(cols[4]).text().replaceAll('"', '')
                     });
                 });
                 JSON.stringify(collection);
