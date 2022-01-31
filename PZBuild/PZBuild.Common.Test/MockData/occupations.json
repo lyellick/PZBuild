@@ -1,0 +1,86 @@
+[
+  {
+    "Name": "Fire Officer",
+    "Icon": "https://pzwiki.net/w/images/e/eb/Fire_Officer.png"
+  },
+  {
+    "Name": "Police Officer",
+    "Icon": "https://pzwiki.net/w/images/6/66/Police_Officer.png"
+  },
+  {
+    "Name": "Park Ranger",
+    "Icon": "https://pzwiki.net/w/images/7/77/Park_Ranger.png"
+  },
+  {
+    "Name": "Construction Worker",
+    "Icon": "https://pzwiki.net/w/images/0/02/Construction_Worker.png"
+  },
+  {
+    "Name": "Security Guard",
+    "Icon": "https://pzwiki.net/w/images/1/1b/Security_Guard.png"
+  },
+  {
+    "Name": "Carpenter",
+    "Icon": "https://pzwiki.net/w/images/0/0a/Carpenter.png"
+  },
+  {
+    "Name": "Burglar",
+    "Icon": "https://pzwiki.net/w/images/2/29/Burglar.png"
+  },
+  {
+    "Name": "Chef",
+    "Icon": "https://pzwiki.net/w/images/e/e5/Chef.png"
+  },
+  {
+    "Name": "Repairman",
+    "Icon": "https://pzwiki.net/w/images/9/9e/Repairman.png"
+  },
+  {
+    "Name": "Farmer",
+    "Icon": "https://pzwiki.net/w/images/3/3d/Farmer.png"
+  },
+  {
+    "Name": "Fisherman",
+    "Icon": "https://pzwiki.net/w/images/f/f0/Fisherman.png"
+  },
+  {
+    "Name": "Doctor",
+    "Icon": "https://pzwiki.net/w/images/6/6c/Doctor.png"
+  },
+  {
+    "Name": "Veteran",
+    "Icon": "https://pzwiki.net/w/images/c/c5/Veteran.png"
+  },
+  {
+    "Name": "Nurse",
+    "Icon": "https://pzwiki.net/w/images/c/cc/Nurse.png"
+  },
+  {
+    "Name": "Lumberjack",
+    "Icon": "https://pzwiki.net/w/images/c/cc/Lumberjack.png"
+  },
+  {
+    "Name": "Fitness Instructor",
+    "Icon": "https://pzwiki.net/w/images/0/07/FitnessInstructor.png"
+  },
+  {
+    "Name": "Burger Flipper",
+    "Icon": "https://pzwiki.net/w/images/f/f9/BurgerFlipper.png"
+  },
+  {
+    "Name": "Electrician",
+    "Icon": "https://pzwiki.net/w/images/d/dd/Electrician.png"
+  },
+  {
+    "Name": "Engineer",
+    "Icon": "https://pzwiki.net/w/images/d/d8/Engineer.png"
+  },
+  {
+    "Name": "Metalworker",
+    "Icon": "https://pzwiki.net/w/images/a/a3/Metalworker.png"
+  },
+  {
+    "Name": "Mechanic",
+    "Icon": "https://pzwiki.net/w/images/5/55/Mechanic.png"
+  }
+]
