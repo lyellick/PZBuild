@@ -39,6 +39,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="MockData\skills.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="MockData\traits.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

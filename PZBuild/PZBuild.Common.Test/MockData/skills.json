@@ -1,0 +1,133 @@
+[
+  {
+    "Name": "Sprinting",
+    "Effect": "This affects how fast you can Run and Sprint.\nThis can be leveled by Running (hold SHIFT) and Sprinting (press Left ALT). Note that if the player is too unfit/obese/overexerted/overburdened they may simply power-walk\" instead and could be unable to sprint, but they can still gain sprinting XP by doing so.\"",
+
+    "SkillType": "Agility"
+  },
+  {
+    "Name": "Lightfooted",
+    "Effect": "This is your general ability to move quietly.\nThis can be levelled by Sneaking near zombies while undetected.",
+    "SkillType": "Agility"
+  },
+  {
+    "Name": "Nimble",
+    "Effect": "The Nimble skill affects how fast you move while in Combat Stance, and also decrease the noise you make while moving.\nThis gains experience by walking in Combat stance(Holding Left-Ctrl or holding Right-Click)",
+    "SkillType": "Agility"
+  },
+  {
+    "Name": "Sneaking",
+    "Effect": "Your general ability to avoid detection and make less noise when Sneaking.\nThis can be levelled by Sneaking (pressing C) near zombies while undetected.",
+    "SkillType": "Agility"
+  },
+  {
+    "Name": "Axe",
+    "Effect": "Influences attack speed, damage done, critical chance and the chance of your character automatically pushing zombies away when grabbed (front grabs) while using the Axe weapon type.\nIncreases when the player hits zombies with axes. Affects Axes.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Long Blunt",
+    "Effect": "Influences attack speed, damage done, critical chance and the chance of your character automatically pushing zombies away when grabbed (front grabs) while using Long Blunt weapons.\nIncreases when the player hits zombies with Long Blunt weapons. Affects Long Blunt.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Short Blunt",
+    "Effect": "Influences attack speed, damage done, critical chance and the chance of your character automatically pushing zombies away when grabbed (front grabs) while using Short Blunt weapons.\nIncreases when the player hits zombies with Short Blunt weapons. Affects Short Blunt.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Long Blade",
+    "Effect": "Influences attack speed, damage done, critical chance and the chance of your character automatically pushing zombies away when grabbed (front grabs) while using Long Blade weapons.\nIncreases when the player hits zombies with Long Bladed weapons. Affects Long Blade.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Short Blade",
+    "Effect": "Influences attack speed, damage done, critical chance and the chance of your character automatically pushing zombies away when grabbed (front grabs) while using Short Blade weapons. Increases the chance of jaw stabs when using knives.\nIncreases when the player hits zombies with Short Blade weapons. Affects Short Blade.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Spear",
+    "Effect": "Influences attack speed, damage done, critical chance and the chance of your character automatically pushing zombies away when grabbed (front grabs) while using Spear weapon type.\nIncreases when the player hits zombies with Spears. Affects Spears.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Maintenance",
+    "Effect": "Increases the chance for any weapon to not lose condition when used.\\nThis gains XP by using weapons, with one caveat; no XP is gained if the weapon loses condition from that use. To train this, you\\'ll need to use a weapon that doesn't break easily.",
+    "SkillType": "Combat"
+  },
+  {
+    "Name": "Carpentry",
+    "Effect": "Raising the Carpentry skill gives a higher chance of repairing items, restoring more durability of a weapon, unlocking more building options, increasing plank barricades' health, barricade faster, does building actions quieter and can build more high-quality buildings with higher health.\nThe carpentry skill is levelled by barricading, crafting anything that uses planks, dismantling furniture and shelving, or by sawing logs into planks.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Cooking",
+    "Effect": "Raising the Cooking allows the player to detect poison better, and make a crafted food more filling and more nutritious with the same ingredient compared to a lower level chef. In addition, raising your cooking skill to level 7 allows you to use rotten ingredients, such as in soups and stews\nThe cooking skill is levelled by cooking food in a heat source or by crafting food recipes.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Farming",
+    "Effect": "Raising the Farming skill allows you to check up on a plants status and the information available increases as the skill does.\nThe farming skill is levelled by harvesting crops. The more XP is awarded the more health the crop has when harvested.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "First Aid",
+    "Effect": "Raising the First Aid gives many benefits in treating wounds:\nFractures/Stitched deep wounds will heal faster and has less impact on movement/combat speed and cause less pain.\nPerform all medical actions faster.\nBandages and Poultices last longer. Allows the player to evaluate the severity of wounds and infections.\nThe first aid skill is levelled by performing medical actions on yourself or others.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Electrical",
+    "Effect": "Raising the Electrical skill allows you to operate generators and create devices.\nThe Electrical skill is levelled by repairing generators, dismantling electronics (Radios, CD players, etc.) and crafting makeshift electronics.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Metalworking",
+    "Effect": "\tRaising the Metalworking skill allows you to build structures that are stronger than wood, welds quieter and make metal barricades more durable.\nThe Metalworking skill is levelled by building or dismantling metal constructions and barricades.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Mechanics",
+    "Effect": "Raising the Mechanics skill allows you to repair and change parts of cars. Combined with Electrical, it can help you start a car without a key by hot wiring it.\nThe Mechanics skill is levelled by repairing cars, or by installing and removing car parts.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Tailoring",
+    "Effect": "Raising the Tailoring skill allows you to patch and fortify clothing, as well as fully repair clothing at higher skill levels. The amount of defence repaired or increased depends on the skill level.\nThe tailoring skill is levelled by repairing and fortifying any clothing piece that may be inspected and repaired.",
+    "SkillType": "Crafting"
+  },
+  {
+    "Name": "Aiming",
+    "Effect": "Your aiming skill determines how accurately you can shoot, your chance to make a critical hit, range, angle, and recoil time.\nThis can be levelled up by shooting an enemy with a firearm. Influences how likely the firearm will be damaged when used.",
+    "SkillType": "Firearm"
+  },
+  {
+    "Name": "Reloading",
+    "Effect": "Your reloading skill determines how long it takes your character to take out a magazine, load some bullets, and insert the magazine back in.\nThis can be levelled up by inserting bullets into a magazine, reloading any firearm with a new magazine, inserting bullets directly into any firearm.",
+    "SkillType": "Firearm"
+  },
+  {
+    "Name": "Fishing",
+    "Effect": "Your fishing skill determines how long it takes you to fish, the chance of breaking the line, letting the fish escape, losing bait or tackle, and increasing your chance to catch a larger fish.\nThis can be levelled up by casting your line into the water or using a spear to fish. No matter what the outcome of the cast you will gain some XP. Larger fish will bring in more XP.",
+    "SkillType": "Survivalist"
+  },
+  {
+    "Name": "Trapping",
+    "Effect": "Your trapping skill gives you a better chance of catching something in your trap and the ability to make new traps.\nThis can be levelled by retrieving the animals caught in your traps.",
+    "SkillType": "Survivalist"
+  },
+  {
+    "Name": "Foraging",
+    "Effect": "Your foraging skill increases the effectiveness of Search (Forage) mode by increasing its radius, item detection speed as well as the chance to find items. More items are unlocked as your foraging skill increases.\nThis can be levelled by going into search mode to find and pick up items.",
+    "SkillType": "Survivalist"
+  },
+  {
+    "Name": "Strength",
+    "Effect": "Your Strength determines your carry weight, as well as certain other factors, such as opening locked windows, push knockback and knockdown chance, melee damage and the chance to climb a tall fence.\nThis can be levelled up mainly by doing Strength Exercises, carrying more than 50% of your weight capacity, and running. Strength experience is also granted when hitting zombies or trees with melee attacks.",
+    "SkillType": "Passives"
+  },
+  {
+    "Name": "Fitness",
+    "Effect": "Fitness increases a multitude of player abilities. It reduces Endurance loss, increases Endurance recovery, increases attack speed, reduces damage from long falls, increases the chance to push a zombie off when attacked, increases exercise speed and reduces trip chance when a zombie lunges after falling over a window or fence.\nFitness can be levelled by sprinting(50\/50 chance to gain XP in Fitness or Sprinting every XP update while running), doing Fitness Exercises and using melee attacks while the player is not overexerted.",
+    "SkillType": "Passives"
+  }
+]

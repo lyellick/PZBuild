@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PZBuild.Common.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,7 @@ namespace PZBuild.Common.Models
         public int SkillID { get; set; }
         public string Name { get; set; }
         public string Effect { get; set; }
-        public string Type { get; set; }
-        public string Icon { get; set; }
+        public SkillTypes SkillType { get; set; }
         public Guid SkillGuid { get; set; }
 
         public virtual ICollection<OccupationSkill> OccupationSkills { get; set; }
