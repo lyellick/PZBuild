@@ -13,7 +13,7 @@ namespace PZBuild.Common.Models
         public string Effect { get; set; }
         public string Type { get; set; }
         public string Icon { get; set; }
-        public int SkillGuid { get; set; }
+        public Guid SkillGuid { get; set; }
 
         public virtual ICollection<OccupationSkill> OccupationSkills { get; set; }
     }

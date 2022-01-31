@@ -16,7 +16,7 @@ namespace PZBuild.Common.Models
         public int Point { get; set; }
         public string Effect { get; set; }
         public string Icon { get; set; }
-        public int TraitGuid { get; set; }
+        public Guid TraitGuid { get; set; }
 
         public virtual ICollection<Occupation> Occupations { get; set; }
     }

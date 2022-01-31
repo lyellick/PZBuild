@@ -9,9 +9,9 @@ namespace PZBuild.Common.Models
     public class OccupationSkill
     {
         public string OccupationSkillID { get; set; }
-        public string OccupationSkillGuid { get; set; }
         public int? StartingLevel { get; set; }
         public string? XPBoost { get; set; }
+        public Guid OccupationSkillGuid { get; set; }
 
         public virtual Skill Skill { get; set; }
         public virtual Occupation Occupation { get; set; }
