@@ -38,4 +38,10 @@
     <ProjectReference Include="..\PZBuild.Common\PZBuild.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="MockData\traits.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

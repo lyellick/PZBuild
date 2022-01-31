@@ -1,0 +1,731 @@
+[
+  {
+    "Name": "Adrenaline Junkie",
+    "Icon": "https://pzwiki.net/w/images/f/f0/TraitAdrenalineJunkie.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -8,
+    "Description": "Moves faster when highly panicked.\\n",
+    "Effect": "Adds a flat bonus of 0.20 or 0.25 for the character's base speed at Strong or Extreme Panic, which increases walking, running, and sprinting speed. There's currently a bug that makes the character's combat walk speed much less affected by Heavy Load or Exertion."
+  },
+  {
+    "Name": "Athletic",
+    "Icon": "https://pzwiki.net/w/images/c/ca/TraitAthletic.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -10,
+    "Description": "Can run faster and longer without tiring.\\n",
+    "Effect": "+4 Fitness. 40% running/sprinting endurance loss from the trait itself."
+  },
+  {
+    "Name": "Brave",
+    "Icon": "https://pzwiki.net/w/images/f/f3/TraitBrave.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Less prone to becoming panicked.\\n",
+    "Effect": "30% panic except for night terrors and phobias."
+  },
+  {
+    "Name": "Cat's Eyes",
+    "Icon": "https://pzwiki.net/w/images/c/c6/TraitCatsEyes.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -2,
+    "Description": "Better vision at night.\\n",
+    "Effect": "+20% better vision at night. Affects search mode"
+  },
+  {
+    "Name": "Dextrous",
+    "Icon": "https://pzwiki.net/w/images/e/e4/TraitDextrous.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -2,
+    "Description": "Transfers inventory items quickly.\\n",
+    "Effect": "50% inventory transferring time."
+  },
+  {
+    "Name": "Eagle Eyed",
+    "Icon": "https://pzwiki.net/w/images/1/18/TraitEagleEyed.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Has a faster visibility fade and a higher visibility arc.\\n",
+    "Effect": "Character has a wider field of view. Affects search mode"
+  },
+  {
+    "Name": "Fast Healer",
+    "Icon": "https://pzwiki.net/w/images/8/8f/TraitFastHealer.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Recovers faster from injury and illness.\\n",
+    "Effect": "Does not apply to exercise fatigue. Recently inflicted injuries have less severity.Including Scratches, Lacerations, Lodged Bullets, Deep wounds (with/without glass), Bites and Fractures. (Check Health for more details.)"
+  },
+  {
+    "Name": "Fast Learner",
+    "Icon": "https://pzwiki.net/w/images/3/32/TraitFastLearner.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Increases XP gains.\\n",
+    "Effect": "130% XP for all skills except Strength and Fitness."
+  },
+  {
+    "Name": "Fast Reader",
+    "Icon": "https://pzwiki.net/w/images/b/b6/TraitFastReader.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -2,
+    "Description": "Takes less time to read books.\\n",
+    "Effect": "130% reading speed."
+  },
+  {
+    "Name": "Fit",
+    "Icon": "https://pzwiki.net/w/images/2/23/TraitFit.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "In good physical shape.\\n",
+    "Effect": "+2 Fitness."
+  },
+  {
+    "Name": "Graceful",
+    "Icon": "https://pzwiki.net/w/images/e/e1/TraitGraceful.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Makes less noise when moving.\\n",
+    "Effect": "60% footsteps sound radius. 90% chance to trip while run/sprint vaulting a low fence or lunging zombies."
+  },
+  {
+    "Name": "Inconspicuous",
+    "Icon": "https://pzwiki.net/w/images/d/db/TraitInconspicuous.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Less likely to be spotted by zombies.\\n",
+    "Effect": "50% chance of zombies spotting you."
+  },
+  {
+    "Name": "Iron Gut",
+    "Icon": "https://pzwiki.net/w/images/8/8b/TraitIronGut.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -3,
+    "Description": "Less chance to have food illness.\\n",
+    "Effect": "50% chance of food illness. Food illness lasts shorter. Check Health for more details."
+  },
+  {
+    "Name": "Keen Hearing",
+    "Icon": "https://pzwiki.net/w/images/b/b1/TraitKeenHearing.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Larger perception radius.\\n",
+    "Effect": "200% perception radius. Zombies that approach from behind will be visible much earlier."
+  },
+  {
+    "Name": "Light Eater",
+    "Icon": "https://pzwiki.net/w/images/6/65/TraitLightEater.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Needs to eat less regularly.\\n",
+    "Effect": "75% hunger."
+  },
+  {
+    "Name": "Low Thirst",
+    "Icon": "https://pzwiki.net/w/images/0/0a/TraitLowThirst.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Needs to drink water less regularly.\\n",
+    "Effect": "50% thirst."
+  },
+  {
+    "Name": "Lucky",
+    "Icon": "https://pzwiki.net/w/images/a/ac/TraitLucky.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Sometimes things just go your way.\\n",
+    "Effect": "+10% chance of finding rare loot. -5% chance of failing item repairs. Affects search mode"
+  },
+  {
+    "Name": "Organized",
+    "Icon": "https://pzwiki.net/w/images/5/56/TraitOrganized.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Increased container inventory capacity.\\n",
+    "Effect": "130% capacity for all containers, including boxes, cupboards and cars"
+  },
+  {
+    "Name": "Outdoorsman",
+    "Icon": "https://pzwiki.net/w/images/4/41/TraitOutdoorsman.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -2,
+    "Description": "Not affected by harsh weather conditions.\\n",
+    "Effect": "10% chance of catching a cold. 1% or 1.25% chance of getting scratched/lacerated while Walking or Running through trees. Start a fire on campfires with Notched Plank faster. Affects search mode"
+  },
+  {
+    "Name": "Resilient",
+    "Icon": "https://pzwiki.net/w/images/f/fc/TraitResilient.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Less prone to disease. Slower rate of zombification.\\n",
+    "Effect": "75% zombification progression rate, 45% chance of catching a cold, 80% cold strength and 50% cold progression speed."
+  },
+  {
+    "Name": "Speed Demon",
+    "Icon": "https://pzwiki.net/w/images/3/3f/Trait_roadrage.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -1,
+    "Description": "The fast driver.\\n",
+    "Effect": "200% Gear switching speed, 115% top speed for all vehicles"
+  },
+  {
+    "Name": "Stout",
+    "Icon": "https://pzwiki.net/w/images/4/4c/TraitStout.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Extra knockback from melee weapons and increased carry weight.\\n",
+    "Effect": "+2 Strength"
+  },
+  {
+    "Name": "Strong",
+    "Icon": "https://pzwiki.net/w/images/2/25/TraitStrong.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -10,
+    "Description": "Extra knockback from melee weapons and increased carry weight.\\n",
+    "Effect": "+4 Strength, 140% melee damage."
+  },
+  {
+    "Name": "Thick Skinned",
+    "Icon": "https://pzwiki.net/w/images/d/d7/TraitThickSkinned.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Less chance of scratches or bites breaking the skin.\\n",
+    "Effect": "Multiplies the chance of not being injured by a zombie attack by 1.3 (base 15% chance, modified by character's weapon skill). Additionally, alters the chance of clothes being damaged by walking through trees to 1 in 13."
+  },
+  {
+    "Name": "Wakeful",
+    "Icon": "https://pzwiki.net/w/images/0/0c/TraitWakeful.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -2,
+    "Description": "Needs less sleep.\\n",
+    "Effect": "-30% less sleep required"
+  },
+  {
+    "Name": "Amateur Mechanic",
+    "Icon": "https://pzwiki.net/w/images/a/a7/TraitMechanic.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -5,
+    "Description": "Has a detailed knowledge of common and heavy vehicle models and their repairs.\\n",
+    "Effect": "+1 Mechanics, can repair standard and heavy-duty vehicles."
+  },
+  {
+    "Name": "Angler",
+    "Icon": "https://pzwiki.net/w/images/4/42/TraitAngler.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Knows the basic of fishing.\\n",
+    "Effect": "+1 Fishing Knows how to make and fix a fishing rod."
+  },
+  {
+    "Name": "Axe Man",
+    "Icon": "https://pzwiki.net/w/images/1/1e/TraitAxeman.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 0,
+    "Description": "Better at chopping trees. Faster axe swing.\\n",
+    "Effect": "Chops trees 25% faster."
+  },
+  {
+    "Name": "Baseball Player",
+    "Icon": "https://pzwiki.net/w/images/b/bd/TraitBaseballPlayer.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Has practice with a baseball bat and knows how to hit with precision.\\n",
+    "Effect": "+1 Long Blunt"
+  },
+  {
+    "Name": "Burglar",
+    "Icon": "https://pzwiki.net/w/images/7/7e/TraitBurglar.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 0,
+    "Description": "Can hotwire vehicles, less chance of breaking the lock of a window.\\n",
+    "Effect": "Can hotwire vehicles and has less chance of breaking the lock of a window when forced open."
+  },
+  {
+    "Name": "Brawler",
+    "Icon": "https://pzwiki.net/w/images/f/f0/TraitBrawler.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Used to getting into trouble.\\n",
+    "Effect": "+1 Axe, +1 Long Blunt"
+  },
+  {
+    "Name": "Cook",
+    "Icon": "https://pzwiki.net/w/images/0/00/TraitCook.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Knows cooking recipes.\\n",
+    "Effect": "+2 Cooking Knows all the cooking recipes without having to read any recipe magazines. Affects search mode."
+  },
+  {
+    "Name": "Desensitized",
+    "Icon": "https://pzwiki.net/w/images/c/c7/TraitDesensitized.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 0,
+    "Description": "War.... War never changes.\\n",
+    "Effect": "0% panic from all sources except night terrors."
+  },
+  {
+    "Name": "First Aider",
+    "Icon": "https://pzwiki.net/w/images/6/61/TraitFirstAider.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Has a CPR and First Aid course certificate.\\n",
+    "Effect": "+1 First Aid"
+  },
+  {
+    "Name": "Former Scout",
+    "Icon": "https://pzwiki.net/w/images/f/f1/TraitFormerScout.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Knows how to pick wild berries and how to treat small injuries.\\n",
+    "Effect": "+1 First Aid, +1 Foraging. Affects search mode."
+  },
+  {
+    "Name": "Gardener",
+    "Icon": "https://pzwiki.net/w/images/7/7b/TraitGardener.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Has basic agriculture knowledge.\\n",
+    "Effect": "+1 Farming  Knows mildew and flies cure. Affects search mode."
+  },
+  {
+    "Name": "Gymnast",
+    "Icon": "https://pzwiki.net/w/images/4/4b/TraitGymnast.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -5,
+    "Description": "Agile and discreet.\\n",
+    "Effect": "+1 Lightfooted, +1 Nimble"
+  },
+  {
+    "Name": "Handy",
+    "Icon": "https://pzwiki.net/w/images/f/fd/TraitHandy.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -8,
+    "Description": "Faster and stronger constructions.\\n",
+    "Effect": "+1 Carpentry, +1 Maintenance  +100HP to all constructions.  Increases building speed (~11%)."
+  },
+  {
+    "Name": "Herbalist",
+    "Icon": "https://pzwiki.net/w/images/d/da/TraitHerbalist.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Can find medicinal herbs and craft medicines and poultices from them.\\n",
+    "Effect": "Able to find herbal medicines, make poultices from them, and identify poisonous wild food. Affects search mode."
+  },
+  {
+    "Name": "Hiker",
+    "Icon": "https://pzwiki.net/w/images/6/6b/TraitHiker.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -6,
+    "Description": "Used to surviving in the jungle.\\n",
+    "Effect": "+1 Foraging, +1 Trapping. Affects search mode."
+  },
+  {
+    "Name": "Hunter",
+    "Icon": "https://pzwiki.net/w/images/b/bd/TraitHunter.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -8,
+    "Description": "Know the basics of hunting.\\n",
+    "Effect": "+1 Aiming, +1 Short Blade, +1 Sneaking, +1 Trapping and affects search mode."
+  },
+  {
+    "Name": "Night Owl",
+    "Icon": "https://pzwiki.net/w/images/8/8b/TraitNightOwl.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 0,
+    "Description": "Requires little sleep. Stays extra alert when sleeping\\n",
+    "Effect": "Recovers from tiredness quicker while sleeping, but will remain asleep even when your character reaches 0 tiredness, which requires an alarm to take advantage of the trait."
+  },
+  {
+    "Name": "Nutritionist",
+    "Icon": "https://pzwiki.net/w/images/1/13/TraitNutritionist.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Can see the nutritional values of any food.\\n",
+    "Effect": "Allows the player to see the nutritional values of any food, even those that aren't packaged. Affects search mode."
+  },
+  {
+    "Name": "Runner",
+    "Icon": "https://pzwiki.net/w/images/d/d6/TraitRunner.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "Runner in the spare times.\\n",
+    "Effect": "+1 Sprinting"
+  },
+  {
+    "Name": "Sewer",
+    "Icon": "https://pzwiki.net/w/images/1/10/TraitTailor.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": -4,
+    "Description": "+1 Tailoring\\n",
+    "Effect": "+1 Tailoring"
+  },
+  {
+    "Name": "Agoraphobic",
+    "Icon": "https://pzwiki.net/w/images/c/c1/TraitAgoraphobic.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Gets panicked when outdoors\\n",
+    "Effect": "Enters in Panic when outdoors and affects search mode."
+  },
+  {
+    "Name": "All Thumbs",
+    "Icon": "https://pzwiki.net/w/images/1/17/TraitAllThumbs.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 2,
+    "Description": "Transfers inventory items slowly\\n",
+    "Effect": "400% inventory transferring time."
+  },
+  {
+    "Name": "Asthmatic",
+    "Icon": "https://pzwiki.net/w/images/7/72/TraitAsthmatic.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 5,
+    "Description": "Faster endurance loss\\n",
+    "Effect": "140% running/sprinting endurance loss. 130% increase in swing endurance lost."
+  },
+  {
+    "Name": "Claustrophobic",
+    "Icon": "https://pzwiki.net/w/images/0/00/TraitClaustrophobic.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Gets panicked when indoors\\n",
+    "Effect": "Enters in Panic when indoors."
+  },
+  {
+    "Name": "Clumsy",
+    "Icon": "https://pzwiki.net/w/images/7/7a/TraitClumsy.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 2,
+    "Description": "Makes more noise when moving\\n",
+    "Effect": "120% footsteps sound radius, 110% chance to trip while run/sprint vaulting a low fence or lunging zombies."
+  },
+  {
+    "Name": "Conspicuous",
+    "Icon": "https://pzwiki.net/w/images/f/fc/TraitConspicuous.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "More likely to be spotted by zombies.\\n",
+    "Effect": "200% chance of getting spotted by zombies."
+  },
+  {
+    "Name": "Cowardly",
+    "Icon": "https://pzwiki.net/w/images/8/82/TraitCowardly.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 2,
+    "Description": "Especially prone to becoming panicked\\n",
+    "Effect": "200% panic except for night terrors and phobias."
+  },
+  {
+    "Name": "Deaf",
+    "Icon": "https://pzwiki.net/w/images/e/e6/TraitDeaf.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 12,
+    "Description": "Smaller perception radius and hearing range\\n",
+    "Effect": "Can't hear sound. Radio chatter will not appear above the radio, however, they can see/read a TV due to closed captions."
+  },
+  {
+    "Name": "Disorganized",
+    "Icon": "https://pzwiki.net/w/images/0/07/TraitDisorganized.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Decreased container inventory capacity\\n",
+    "Effect": "70% capacity for all containers, including boxes and cupboards."
+  },
+  {
+    "Name": "Emaciated",
+    "Icon": "https://pzwiki.net/w/images/4/44/TraitEmaciated.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 0,
+    "Description": "Low strength, low endurance and prone to injury\\n",
+    "Effect": "Is only present at weight 50 and less and will begin taking damage at weight 35. 40% melee damage. 75% chance to fail to climb a tall fence. 30% endurance regeneration. 20 more fall damage."
+  },
+  {
+    "Name": "Feeble",
+    "Icon": "https://pzwiki.net/w/images/a/ae/TraitFeeble.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Less knockback from melee weapons. Decreased carrying weight.\\n",
+    "Effect": "-2 Strength"
+  },
+  {
+    "Name": "Hard of Hearing",
+    "Icon": "https://pzwiki.net/w/images/8/82/TraitHardofHearing.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 2,
+    "Description": "Smaller perception radius. Smaller hearing range.\\n",
+    "Effect": "Besides the decreased perception radius, the range of sound will be decreased and the sound effects will be muffled."
+  },
+  {
+    "Name": "Hearty Appetite",
+    "Icon": "https://pzwiki.net/w/images/b/be/TraitHeartyAppetite.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Needs to eat more regularly\\n",
+    "Effect": "150% hunger."
+  },
+  {
+    "Name": "Hemophobic",
+    "Icon": "https://pzwiki.net/w/images/2/26/TraitHemophobic.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 5,
+    "Description": "Panic when performing first aid on self, cannot perform first aid on others, gets stressed when bloody\\n",
+    "Effect": "-"
+  },
+  {
+    "Name": "High Thirst",
+    "Icon": "https://pzwiki.net/w/images/2/20/TraitHighThirst.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Needs more water to survive\\n",
+    "Effect": "200% thirst"
+  },
+  {
+    "Name": "Illiterate",
+    "Icon": "https://pzwiki.net/w/images/1/17/TraitIlliterate.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 8,
+    "Description": "Cannot read books\\n",
+    "Effect": "Unable to get a mood boost by reading leisure books, learning new recipes by reading recipe magazines or getting an XP multiplier by reading skill books."
+  },
+  {
+    "Name": "Out of Shape",
+    "Icon": "https://pzwiki.net/w/images/f/ff/TraitOutofShape.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Low endurance, low endurance regeneration.\\n",
+    "Effect": "-2 Fitness"
+  },
+  {
+    "Name": "Obese",
+    "Icon": "https://pzwiki.net/w/images/e/ec/TraitObese.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 10,
+    "Description": "Reduced running speed, very low endurance and prone to injury.\\n",
+    "Effect": "-2 Fitness. Max Fitness of 6. The trait itself reduce run speed and endurance. Starting weight is 105 and is only present at weight 100 and above. 120% chance to trip while run/sprint vaulting a low fence. 90% chance to trip from lunging zombies. 75% chance to climb a tall fence. 40% endurance regeneration. 20 more fall damage."
+  },
+  {
+    "Name": "Overweight",
+    "Icon": "https://pzwiki.net/w/images/e/ec/TraitOverweight.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Reduced running speed, low endurance and prone to injury.\\n",
+    "Effect": "Max Fitness of 9. Starting weight is 90 and is only present between weights 85 and 100. 1% slower running speed, 200% endurance loss. 110% chance to trip while run/sprint vaulting a low fence. 95% chance to trip by lunging zombies. 85% chance to climb a tall fence. 70% endurance regeneration."
+  },
+  {
+    "Name": "Pacifist",
+    "Icon": "https://pzwiki.net/w/images/c/c1/TraitPacifist.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Less effective with weapons\\n",
+    "Effect": "75% XP of Melee and Aiming skill."
+  },
+  {
+    "Name": "Prone to Illness",
+    "Icon": "https://pzwiki.net/w/images/b/b5/TraitHypochondriac.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "More prone to disease. Faster rate of zombification.\\n",
+    "Effect": "125% progression rate of zombification. 170% chance of catching a cold, 120% cold strength and 150% cold progression speed."
+  },
+  {
+    "Name": "Restless Sleeper",
+    "Icon": "https://pzwiki.net/w/images/7/75/TraitRestlessSleeper.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Slow loss of tiredness while sleeping\\n",
+    "Effect": "Sleep for fewer hours each time, and slower loss of tiredness when sleeping."
+  },
+  {
+    "Name": "Short Sighted",
+    "Icon": "https://pzwiki.net/w/images/1/17/TraitShortSighted.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 2,
+    "Description": "Small view distance. Slower visibility fade.\\n",
+    "Effect": "-2 foraging radius in search mode."
+  },
+  {
+    "Name": "Sleepyhead",
+    "Icon": "https://pzwiki.net/w/images/1/1e/TraitSleepyhead.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Needs more sleep\\n",
+    "Effect": "70% tiredness rate."
+  },
+  {
+    "Name": "Smoker",
+    "Icon": "https://pzwiki.net/w/images/4/46/TraitSmoker.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "Stress and unhappiness decrease after smoking tobacco. Unhappiness rises when tobacco is not smoked.\\n",
+    "Effect": "Stress will constantly slowly rise. Smoking Cigarettes will lower the stress level."
+  },
+  {
+    "Name": "Slow Healer",
+    "Icon": "https://pzwiki.net/w/images/0/0b/TraitSlowHealer.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Recovers slowly from injuries and illness\\n",
+    "Effect": "Does not apply to exercise fatigue. Recently inflicted injuries have more severity.Including Scratches, Lacerations, Lodged Bullets, Deep wounds (with/without glass), Bites and Fractures. (Check Health for more details.)"
+  },
+  {
+    "Name": "Slow Learner",
+    "Icon": "https://pzwiki.net/w/images/b/bc/TraitSlowLearner.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Decreased XP gains\\n",
+    "Effect": "70% XP in all skills except Strength and Fitness."
+  },
+  {
+    "Name": "Slow Reader",
+    "Icon": "https://pzwiki.net/w/images/0/0b/TraitSlowReader.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 2,
+    "Description": "Takes longer to read books\\n",
+    "Effect": "70% reading speed."
+  },
+  {
+    "Name": "Sunday driver",
+    "Icon": "https://pzwiki.net/w/images/a/ad/Trait_sundaydriver.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 1,
+    "Description": "The very slow driver\\n",
+    "Effect": "Accelerates vehicles 40% slower. Has a max speed of 30 km/h."
+  },
+  {
+    "Name": "Thin-skinned",
+    "Icon": "https://pzwiki.net/w/images/b/b6/TraitThinskinned.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 8,
+    "Description": "Increased chance of scratches, lacerations, or bites breaking the skin.\\n",
+    "Effect": "Multiplies the chance of not being injured by a zombie attack by 0.7 (base 15% chance, modified by character's weapon skill). Additionally, alters the chance of clothes being damaged by walking through trees to 1 in 3."
+  },
+  {
+    "Name": "Underweight",
+    "Icon": "https://pzwiki.net/w/images/e/ea/TraitUnderweight.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 6,
+    "Description": "Low strength, low endurance and prone to injury.\\n",
+    "Effect": "-1 Fitness. Starting weight is 70 and is only present between weights 65 and 75. 80%x melee damage. +10% chance to trip by while run/sprint vaulting a low fence or from lunging zombies. 85%x chance to fail a tall fence climb."
+  },
+  {
+    "Name": "Unfit",
+    "Icon": "https://pzwiki.net/w/images/e/e4/TraitUnfit.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 10,
+    "Description": "Very low endurance, very low endurance regeneration. \\n",
+    "Effect": "-4 Fitness"
+  },
+  {
+    "Name": "Unlucky",
+    "Icon": "https://pzwiki.net/w/images/0/07/TraitUnlucky.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 4,
+    "Description": "What could go wrong for you, often does.\\n",
+    "Effect": "-10% chance of finding rare loot. +5% chance of failing item repairs. Affects search mode."
+  },
+  {
+    "Name": "Very Underweight",
+    "Icon": "https://pzwiki.net/w/images/9/99/TraitVeryUnderweight.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 10,
+    "Description": "Very low strength, very low endurance and prone to injury.\\n",
+    "Effect": "-2 Fitness. Starting weight is 60 and is only present between weights 50 and 65. 60%x melee damage. +20% chance to trip by while run/sprint vaulting a low fence or from lunging zombies. 75%x chance to fail a tall fence climb. 10 more fall damage."
+  },
+  {
+    "Name": "Weak",
+    "Icon": "https://pzwiki.net/w/images/5/5b/TraitWeak.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 10,
+    "Description": "Less knockback from melee weapons. Decreased carrying weight.\\n",
+    "Effect": "-5 Strength, 60% melee damage."
+  },
+  {
+    "Name": "Weak Stomach",
+    "Icon": "https://pzwiki.net/w/images/7/72/TraitWeakStomach.png",
+    "IsOccupationExclusive": false,
+    "IsPositive": false,
+    "Point": 3,
+    "Description": "Higher chance to have food illness.\\n",
+    "Effect": "200% chance of food illness. Food illness lasts shorter. Check Health for more details."
+  }
+]
