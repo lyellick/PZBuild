@@ -37,7 +37,8 @@ namespace PZBuild.Common.Test.RepositoryTests
         [Fact]
         public async Task OccupationRepository_CreateMany_Success()
         {
-            /*  https://pzwiki.net/wiki/Occupation
+            /*  JavaScript - Target: https://pzwiki.net/wiki/Occupation
+                
                 var collection = [];
                 $("#mw-content-text > div > div > div:nth-child(2) > table > tbody > tr > td > span > a > img").each(function () {
                     collection.push({
@@ -46,6 +47,7 @@ namespace PZBuild.Common.Test.RepositoryTests
                     });
                 });
                 JSON.stringify(collection);
+                
             */
 
             string json = File.ReadAllText("MockData/occupations.json");
