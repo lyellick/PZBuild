@@ -48,7 +48,7 @@ namespace PZBuild.Common.Test.RepositoryTests
                             Name: $(cols[1]).text().trim(),
                             Icon: "https://" + location.hostname + $(cols[0]).find("img").attr("src"),
                             IsOccupationExclusive: false,
-                            IsPositive: $(cols[2]).text() === "Positive",
+                            IsPositive:  parseInt($(cols[4]).text()) > 0,
                             Point: parseInt($(cols[4]).text()),
                             Description: $(cols[5]).text().replaceAll('"', ''),
                             Effect: $(cols[6]).text().replace(/(\r\n|\n|\r)/gm,"")
