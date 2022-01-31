@@ -11,10 +11,11 @@ string connection = builder.Configuration.GetConnectionString("DefaultConnection
 
 builder.Services.AddDbContext<PZBuildContext>(options => options.UseSqlServer(connection));
 
-builder.Services.AddScoped<IOccupationRepository, OccupationRepository>();
-builder.Services.AddScoped<IOccupationSkillRepository, OccupationSkillRepository>();
-builder.Services.AddScoped<ISkillRepository, SkillRepository>();
-builder.Services.AddScoped<ITraitRepository, TraitRepository>();
+builder.Services
+    .AddScoped<IOccupationRepository, OccupationRepository>()
+    .AddScoped<IOccupationSkillRepository, OccupationSkillRepository>()
+    .AddScoped<ISkillRepository, SkillRepository>()
+    .AddScoped<ITraitRepository, TraitRepository>();
 
 var app = builder.Build();
 
