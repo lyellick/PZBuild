@@ -141,3 +141,17 @@ html, body {
 #character-select {
     width: 23.2rem !important;
 }
+
+#alert {
+}
+
+#alert.open {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .5s;
+}
+
+#alert.close {
+    visibility: hidden;
+    opacity: 0;
+}

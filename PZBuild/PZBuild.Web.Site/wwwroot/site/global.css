@@ -114,3 +114,12 @@ body {
 #character-select {
   width: 23.2rem !important;
 }
+#alert.open {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.5s;
+}
+#alert.close {
+  visibility: hidden;
+  opacity: 0;
+}
