@@ -263,6 +263,16 @@
                 queryParams.set("traits", selectedTraits.join(","));
 
                 history.replaceState(null, null, "?"+queryParams.toString());
+
+                document.getElementById("choosen-traits").innerHTML = "";
+
+                choosenTraits.forEach(function (id) {
+                    var availableTrait = document.getElementById(id);
+
+                    document.getElementById("choosen-traits").append(`
+                        ${id}
+                    `);
+                });
             } else {
                 message("An occupation needs to be selected before you can select traits.");
             }
